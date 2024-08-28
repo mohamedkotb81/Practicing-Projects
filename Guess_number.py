@@ -1,7 +1,23 @@
 import random
 
-n1= int(input("Please define the lowest value: "))
-n2= int(input("Please define the highest value: "))
+n1= input("Please define the lowest value: ")
+if n1.isdigit():
+    n1 = int(n1)
+else:
+    print("Please write a number.")
+    n1= input("Please define the lowest value: ")
+    # quit()
+
+n2= input("Please define the highest value: ")
+if n2.isdigit():
+    n2 = int(n2)
+else:
+    print("Please write a number.")
+    n2= input("Please define the highest value: ")
+    # quit()
+
+n1 = int(n1)
+n2 = int(n2)
 R = range(n1,n2)
 D = (random.randint(n1, n2))
 attemp = 7
