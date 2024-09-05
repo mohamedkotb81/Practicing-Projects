@@ -15,6 +15,7 @@ while True:
     else:
         computer_choice = random.randint(0,2)
         comp_pick = options[computer_choice]
+        print("The Computer picked ", comp_pick )
         if user_input == comp_pick:
             print("withdraw..")
         elif user_input == "paper" and comp_pick == "rock":
@@ -30,6 +31,6 @@ while True:
             print("Computer wins !!!")
             computer_wins +=1
 
-print('You won: ', user_wins)
-print('Computer won: ', computer_wins)
+print('You won:', user_wins, "times.")
+print('Computer won:', computer_wins, "times.")
 print("Good Bye!")
